@@ -18,3 +18,82 @@ section {
 #gallery .row > * {
   padding: 0;
 }
+
+/* My Cyber Security */
+.cyber-security-box {
+  position: relative;
+  background-color: #706f6f;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.cyber-security-box:hover::before {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.3;
+}
+
+.cyber-security-box::after {
+  content: "vulnerabilities and weaknesses";
+  position: absolute;
+  color: #fcfcfc;
+  font-size: 2.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 320px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cyber-security-box:hover::after {
+  opacity: 0.3;
+}
+
+.cyber-security-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #222020;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.cyber-security-box:hover .cyber-security-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.cyber-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.cyber-security-box:hover .cyber-detail-button {
+  opacity: 1;
+  bottom: 2px;
+}
+
+.cyber-security-img {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -55%, 150px);
+  max-width: 350px;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.cyber-security-box:hover .cyber-security-img {
+  transform: translate3d(-50%, -52% 100px) rotate(2deg) scale(1.2);
+}

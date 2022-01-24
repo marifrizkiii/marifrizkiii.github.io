@@ -165,6 +165,39 @@
         </div>
       </div>
 
+      <section id="cyber-security">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>Information</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="cyber-security-box">
+                <h4 class="cyber-security-name">Penetration Testing</h4>
+                <img src="img/cyber/cyber4.png" alt="Cyber Security" class="cyber-security-img" />
+                <a href="#" class="btn btn-dark cyber-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="cyber-security-box">
+                <h4 class="cyber-security-name">Cyber Defense</h4>
+                <img src="img/cyber/cyber1.png" alt="Cyber Security2" class="cyber-security-img" />
+                <a href="#" class="btn btn-dark cyber-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="cyber-security-box">
+                <h4 class="cyber-security-name">Information Security Analyst</h4>
+                <img src="img/cyber/cyber5.png" alt="Cyber Security3" class="cyber-security-img" />
+                <a href="#" class="btn btn-dark cyber-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#949494"
@@ -349,6 +382,15 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".cyber-security-box"), {
+        max: 35,
+        speed: 1000,
+        glare: true,
       });
     </script>
   </body>
