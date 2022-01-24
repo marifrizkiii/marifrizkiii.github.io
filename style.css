@@ -1,5 +1,5 @@
 .jumbotron {
-  padding-top: 5rem;
+  padding-top: 6rem;
   background-color: #414141;
 }
 
@@ -95,5 +95,5 @@ section {
 }
 
 .cyber-security-box:hover .cyber-security-img {
-  transform: translate3d(-50%, -52% 100px) rotate(2deg) scale(1.2);
+  transform: translate3d(-50%, -52%, 100px) rotate(2deg) scale(1.2);
 }
